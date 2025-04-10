@@ -29,8 +29,6 @@ public class FPSPlayer : NetworkBehaviour
         {
             playerCamera.gameObject.SetActive(false);
         }
-
-
         // Lock cursor
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
@@ -46,7 +44,7 @@ public class FPSPlayer : NetworkBehaviour
 
     private void HandleMovement()
     {
-        if (!isLocalPlayer) return;
+        //if (!isLocalPlayer) return;
         // Translate move input to world space
         Vector3 move = transform.right * moveInput.x + transform.forward * moveInput.y;
         move *= moveSpeed;
@@ -65,7 +63,7 @@ public class FPSPlayer : NetworkBehaviour
 
     private void HandleLook()
     {
-        if (!isLocalPlayer) return;
+       // if (!isLocalPlayer) return;
         float mouseX = lookInput.x * lookSpeed * Time.deltaTime;
         float mouseY = lookInput.y * lookSpeed * Time.deltaTime;
 
@@ -78,7 +76,6 @@ public class FPSPlayer : NetworkBehaviour
 
     public void OnMove(InputValue value)
     {
-   
         moveInput = value.Get<Vector2>();
     }
 
