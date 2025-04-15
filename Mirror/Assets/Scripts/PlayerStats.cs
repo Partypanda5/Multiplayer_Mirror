@@ -15,11 +15,10 @@ public class PlayerStats : NetworkBehaviour
             HandleDeath();
         }
     }
-
     void HandleDeath()
     {
         // Disable the player object on all clients
         //add custom death scene here - fade to black, UI, respawn etc.
-        gameObject.SetActive(false);
+        Destroy(gameObject);
     }
 }

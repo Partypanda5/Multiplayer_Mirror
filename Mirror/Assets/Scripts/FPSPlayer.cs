@@ -24,7 +24,6 @@ public class FPSPlayer : NetworkBehaviour
     [Header("Shooting Stuff")]
     public Transform lazerTransform;
     public TrailRenderer lazerBeam;
-    private bool isShooting;
 
     void Start()
     {
