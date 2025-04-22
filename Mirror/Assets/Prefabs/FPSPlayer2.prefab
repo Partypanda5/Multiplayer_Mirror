@@ -18,7 +18,7 @@ GameObject:
   - component: {fileID: 3812170191678306139}
   - component: {fileID: 2020722328054791563}
   m_Layer: 0
-  m_Name: FPSPlayer
+  m_Name: FPSPlayer2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -72,7 +72,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: c3d54d485977abb48bddd2bd034ddaeb, type: 2}
+  - {fileID: 2100000, guid: a7583e5760a1ef2419d63bec44a83818, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -184,11 +184,10 @@ MonoBehaviour:
   lookSpeed: 2
   jumpHeight: 1.5
   gravity: -9.81
-  boostedSpeed: 1000
-  isSpeedBoosted: 0
   playerCamera: {fileID: 8994671000665607210}
   lazerTransform: {fileID: 3778963530503353233}
   lazerBeam: {fileID: 1796691220227887901, guid: f2f0bed13ef8cb8498a4ceb672acfbb9, type: 3}
+  carriedFlag: {fileID: 359751881750881724, guid: 781370385653fb040b4c549d30e05ff0, type: 3}
 --- !u!114 &3812170191678306139
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -202,7 +201,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneId: 0
-  _assetId: 3334064600
+  _assetId: 2882697218
   serverOnly: 0
   visibility: 0
   hasSpawned: 0
