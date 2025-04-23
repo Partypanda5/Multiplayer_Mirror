@@ -184,10 +184,11 @@ MonoBehaviour:
   lookSpeed: 2
   jumpHeight: 1.5
   gravity: -9.81
+  boostedSpeed: 10
+  isSpeedBoosted: 0
   playerCamera: {fileID: 8994671000665607210}
   lazerTransform: {fileID: 3778963530503353233}
   lazerBeam: {fileID: 1796691220227887901, guid: f2f0bed13ef8cb8498a4ceb672acfbb9, type: 3}
-  carriedFlag: {fileID: 359751881750881724, guid: 781370385653fb040b4c549d30e05ff0, type: 3}
 --- !u!114 &3812170191678306139
 MonoBehaviour:
   m_ObjectHideFlags: 0
